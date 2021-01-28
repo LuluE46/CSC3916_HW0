@@ -1,0 +1,39 @@
+Definitions taken from mozilla.org
+
+Content-Type: 
+-used to indicate the media type of the resource 
+
+Vary: 
+-determines how to match future request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin
+ server. Used by server to indicate which headers it used to select a representation of a resource in a content negotiation algorithm.
+
+Content-Encoding:
+-entity header is used to compress the media-type. When present, its value indicates which encodings were applied to the entity-body. It lets the 
+ client know how to decode in order to obtain the media-type referenced by the Content-Type header.
+
+Date:
+-general HTTP header contains the date and time at which the message was originated.
+
+Server:
+-header describes the software used by the origin server that handled the request — that is, the server that generated the response.
+
+Cache-Control:
+-HTTP header holds directives (instructions) for caching in both requests and responses. A given directive in a request does not mean the same 
+ directive should be in the response.
+
+X-XSS-Protection:
+-response header is a feature of Internet Explorer, Chrome and Safari that stops pages from loading when they detect reflected cross-site scripting 
+ (XSS) attacks. Although these protections are largely unnecessary in modern browsers when sites implement a strong Content-Security-Policy that 
+ disables the use of inline JavaScript ('unsafe-inline'), they can still provide protections for users of older web browsers that don't yet support 
+ CSP. X-Frame-Options
+
+X-Content-Type-Option:
+-response HTTP header is a marker used by the server to indicate that the MIME types advertised in the Content-Type headers should not be changed and 
+ be followed. This is a way to opt out of MIME type sniffing, or, in other words, to say that the MIME types are deliberately configured.
+
+Alt-Svc:
+-HTTP response header is used to advertise alternative services through which the same resource can be reached. An alternative service is defined by a 
+ protocol/host/port combination.
+
+Transfer-Encoding:
+-header specifies the form of encoding used to safely transfer the payload body to the user.
